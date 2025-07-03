@@ -1,0 +1,89 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "deed9af6-f4f3-4748-b740-fcc4e1016ae1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import tkinter as tk\n",
+    "from tkinter import messagebox\n",
+    "import cv2\n",
+    "import os\n",
+    "from PIL import Image\n",
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "b49e8ea7-165d-4cf2-a560-185df225742a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "window=tk.Tk()\n",
+    "window.title(\"face recognition system\")\n",
+    "\n",
+    "\n",
+    "l1=tk.Label(window,text=\"Name\",font=(\"Arial\",20))\n",
+    "l1.grid(column=0,row=0)\n",
+    "t1=tk.Entry(window,width=50,bd=5)\n",
+    "t1.grid(column=1,row=0)\n",
+    "\n",
+    "\n",
+    "l2=tk.Label(window,text=\"age\",font=(\"Arial\",20))\n",
+    "l2.grid(column=0,row=1)\n",
+    "t2=tk.Entry(window,width=50,bd=5)\n",
+    "t2.grid(column=1,row=1)\n",
+    "\n",
+    "l3=tk.Label(window,text=\"Address\",font=(\"Arial\",20))\n",
+    "l3.grid(column=0,row=2)\n",
+    "t3=tk.Entry(window,width=50,bd=5)\n",
+    "t3.grid(column=1,row=2)\n",
+    "\n",
+    "b1=tk.Button(window,text=\"Traning\",font=(\"Arial\",20),bg=\"#BCDBF3\",fg=\"#424C55\")\n",
+    "b1.grid(column=0,row=4)\n",
+    "\n",
+    "b2=tk.Button(window,text=\"detect the face\",font=(\"Arial\",20),bg=\"#BCDBF3\",fg=\"#424C55\")\n",
+    "b2.grid(column=1,row=4)\n",
+    "\n",
+    "b3=tk.Button(window,text=\"genarating dataset\",font=(\"Arial\",20),bg=\"#BCDBF3\",fg=\"#424C55\")\n",
+    "b3.grid(column=2,row=4)\n",
+    "\n",
+    "\n",
+    "window.geometry(\"800x200\")\n",
+    "window.mainloop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dcbe1cd0-adb9-4b6f-807a-88f4c9d0d5c4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
